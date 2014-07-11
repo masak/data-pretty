@@ -17,3 +17,9 @@ augment class Sub {
         '&' ~ ($.name || '<anon>')
     }
 }
+
+augment class Regex {
+    method gist {
+        '<regex>'
+    }
+}

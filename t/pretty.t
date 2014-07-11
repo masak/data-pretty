@@ -17,4 +17,7 @@ is hash("foo", 2).gist, '{"foo" => 2}', "pretty hash() hashes";
 is sub foo {}.gist, '&foo', "pretty subs";
 is sub {}.gist, '&<anon>', "pretty anon subs";
 
+# regexes
+is /abc/.gist, '<regex>', "pretty regexes";
+
 done;

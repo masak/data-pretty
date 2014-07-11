@@ -12,6 +12,8 @@ Perl 5.
     1 2 3
     > [1, 2, [3, 4]]
     1 2 3 4
+    > /abc/
+    
     > sub foo {}
     sub foo () { #`(Sub|140681338496168) ... }
 
@@ -25,5 +27,7 @@ hashes, and subroutines.
     (1, 2, 3)
     > [1, 2, [3, 4]]
     [1, 2, [3, 4]]
+    > /abc/
+    <regex>
     > sub foo {}
     &foo

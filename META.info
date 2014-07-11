@@ -1,6 +1,6 @@
 {
     "name"        : "Data::Pretty",
-    "version"     : "0.0.1",
+    "version"     : "0.0.2",
     "author"      : "github:masak",
     "description" : "Righting the last few wrongs in Perl 6 gist output",
     "depends"     : [],
