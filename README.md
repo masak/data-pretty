@@ -6,28 +6,28 @@ on that point; it hasn't shaken off all the weird legacy stringification from
 Perl 5.
 
     $ perl6
-    > [1, 2, 3]
+    > [1, 2, 3]         # no brackets :(
     1 2 3
-    > (1, 2, 3)
+    > (1, 2, 3)         # no parens :(
     1 2 3
-    > [1, 2, [3, 4]]
+    > [1, 2, [3, 4]]    # can't see the nesting :(
     1 2 3 4
-    > /abc/
+    > /abc/             # regexes don't say much :(
     
-    > sub foo {}
+    > sub foo {}        # long ugly number :(
     sub foo () { #`(Sub|140681338496168) ... }
 
 `Data::Pretty` gives you nice default stringifications for arrays, parcels,
 hashes, and subroutines.
 
     > use Data::Pretty
-    > [1, 2, 3]
+    > [1, 2, 3]         # brackets :)
     [1, 2, 3]
-    > (1, 2, 3)
+    > (1, 2, 3)         # parens :)
     (1, 2, 3)
-    > [1, 2, [3, 4]]
+    > [1, 2, [3, 4]]    # nesting :)
     [1, 2, [3, 4]]
-    > /abc/
+    > /abc/             # yep, a regex :)
     <regex>
-    > sub foo {}
+    > sub foo {}        # short and sweet :)
     &foo
