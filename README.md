@@ -31,3 +31,6 @@ hashes, and subroutines.
     <regex>
     > sub foo {}        # short and sweet :)
     &foo
+
+I wish Perl 6 itself would implement this kind of stringification of data
+structures, making this module obsolete.
