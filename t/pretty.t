@@ -10,8 +10,8 @@ is (1, 2, 3).gist, '(1, 2, 3)', "pretty parcels";
 is list(1, 2, 3).gist, '(1, 2, 3)', "pretty list() parcels";
 
 # hashes
-is { foo => 2 }.gist, '{"foo" => 2}', "pretty hashes";
-is hash("foo", 2).gist, '{"foo" => 2}', "pretty hash() hashes";
+is { foo => 2 }.gist, '{foo => 2}', "pretty hashes";
+is hash("foo", 2).gist, '{foo => 2}', "pretty hash() hashes";
 
 # subs
 is sub foo {}.gist, '&foo', "pretty subs";
