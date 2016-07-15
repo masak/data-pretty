@@ -1,4 +1,4 @@
-use MONKEY_TYPING;
+use MONKEY-TYPING;
 
 augment class Hash {
     multi method gist is default {
@@ -13,7 +13,7 @@ augment class Hash {
 }
 
 augment class Array {
-    method gist {
+    multi method gist is default {
         '[' ~ $.map(*.gist).join(', ') ~ ']'
     }
 }
@@ -24,20 +24,14 @@ augment class List {
     }
 }
 
-augment class Parcel {
-    multi method gist is default {
-        '(' ~ $.map(*.gist).join(', ') ~ ')'
-    }
-}
-
 augment class Sub {
-    method gist {
+    multi method gist is default {
         '&' ~ ($.name || '<anon>')
     }
 }
 
 augment class Regex {
-    method gist {
+    multi method gist is default {
         '<regex>'
     }
 }
